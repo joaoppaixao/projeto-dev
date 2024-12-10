@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f0ebf8;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #333;
+}
+
+p, label {
+    color: #444;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+input[type="text"], 
+input[type="email"] {
+    width: 300px;
+}
+
+/* header container */
+
+.header-container {
+    background-color: rgba(239, 23, 23, 0.773);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.header-container h1 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.header-container p {
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* form container */
+
+.body-container {
+    background-color: #fdfdfd;
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    top: -22px;
+}
+
+.box-input {
+    padding: 15px;
+    display: inline-block;
+}
+
+.block {
+    display: block;
+}
