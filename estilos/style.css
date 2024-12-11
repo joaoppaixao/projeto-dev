@@ -16,6 +16,7 @@ h1, h2, h3, h4, h5 {
 
 p, label {
     color: #444;
+    margin-bottom: 10px;
 }
 
 input {
@@ -25,8 +26,13 @@ input {
 }
 
 input[type="text"], 
-input[type="email"] {
+input[type="email"],
+textarea {
     width: 300px;
+}
+
+textarea {
+    padding: 10px 5px;
 }
 
 /* header container */
@@ -52,17 +58,61 @@ input[type="email"] {
 
 .body-container {
     background-color: #fdfdfd;
-    width: 60%;
+    width: 700px;
+    padding: 30px;
     margin: 0 auto;
     position: relative;
     top: -22px;
 }
 
 .box-input {
-    padding: 15px;
+    margin-bottom: 25px;
+}
+
+#inline-block {
     display: inline-block;
+    margin-right: 20px;
 }
 
 .block {
     display: block;
+}
+
+select {
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.optional-box {
+    display: inline-block;
+    margin: 0 30px 30px 0;
+}
+
+.optional-list {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.required-field {
+    color: red;
+}
+
+.submit-btn {
+    padding: 15px;
+    background-color: rgba(239, 23, 23, 0.773);
+    color: white;
+    border: 2px solid transparent;
+    font-weight: bold;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.submit-btn:hover {
+    background-color: white;
+    color: rgba(239, 23, 23, 0.773);
+    border-color: rgba(239, 23, 23, 0.773);
 }

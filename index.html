@@ -17,20 +17,93 @@
     <div class="body-container">
         <!-- formulario -->
         <form>
-            <div class="box-input">
-                <label for="name">Nome</label>
+            <div id="inline-block" class="box-input">
+                <label for="name">Nome <span class="required-field">*</span></label>
                 <input type="text" name="name" id="name" class="block" placeholder="Digite seu nome" required>
             </div>
 
-            <div class="box-input">
-                <label for="last-name">Sobrenome</label>
+            <div id="inline-block" class="box-input">
+                <label for="last-name">Sobrenome <span class="required-field">*</span></label>
                 <input type="text" name="last-name" id="last-name" class="block" placeholder="Digite seu sobrenome" required>
             </div>
 
             <div class="box-input">
-                <label for="email">Email</label>
+                <label for="email">Email <span class="required-field">*</span></label>
                 <input type="email" name="email" id="email" class="block" placeholder="Digite seu email" required>
             </div>
+
+            <div class="box-input">
+                <p>Selecione a sua área <span class="required-field">*</span></p>
+                <input type="radio" name="area" id="front">
+                <label for="front">Front-End</label>
+
+                <input type="radio" name="area" id="back">
+                <label for="back">Back-End</label>
+
+                <input type="radio" name="area" id="full">
+                <label for="full">Full-Stack</label>
+            </div>
+            
+            <div class="box-input">
+                <label for="experience">Qual seu nível de experiência? <span class="required-field">*</span></label>
+                <select name="experience" id="experience" class="block">
+                    <option selected disabled>Selecione</option>
+                    <option value="estagiario">Estagiário</option>
+                    <option value="junior">Júnior</option>
+                    <option value="pleno">Pleno</option>
+                    <option value="senior">Sênior</option>
+                </select>
+            </div>
+
+            <div class="optional-box">
+                <p>Selecione as tecnologias que você utiliza:</p>
+                <ul class="optional-list">
+                    <li>
+                        <input type="checkbox" name="optional[]" id="html" value="html">
+                        <label for="html">HTML</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="optional[]" id="css" value="css">
+                        <label for="css">CSS</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="optional[]" id="javascript" value="javascript">
+                        <label for="javascript">JavaScript</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="optional[]" id="java" value="java">
+                        <label for="java">Java</label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="optional-box">
+                <ul class="optional-list">
+                    <li>
+                        <input type="checkbox" name="optional[]" id="react" value="react">
+                        <label for="react">React</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="optional[]" id="mysql" value="mysql">
+                        <label for="mysql">MySQL</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="optional[]" id="python" value="python">
+                        <label for="python">Python</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="optional[]" id="git" value="git">
+                        <label for="git">Git</label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="box-input">
+                <label for="description">Conte um pouco mais sobre a sua experiência: <span class="required-field">*</span></label>
+                <textarea name="description" id="description" class="block" placeholder="Digite sobre sua experiência como desenvolvedor"></textarea>
+            </div>
+
+            <input type="submit" value="Enviar" class="submit-btn">
         </form>
     </div>
 </body>
